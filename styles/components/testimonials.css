@@ -12,7 +12,7 @@
 
 .testimonials {
   margin: auto;
-  width: 90%;
+  width: 80%;
   padding-top: 148px;
   padding-bottom: 168px; }
   .testimonials__container {
@@ -93,6 +93,10 @@
     text-transform: uppercase; }
   .testimonials__quote {
     margin-top: 31px; }
+
+@media only screen and (max-width: 1200px) {
+  .testimonials {
+    width: 90%; } }
 
 @media only screen and (max-width: 1100px) {
   .testimonials__container {
