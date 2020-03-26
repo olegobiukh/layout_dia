@@ -1,0 +1,19 @@
+.about {
+  padding: 148px 0; }
+  .about__box {
+    max-width: 745px;
+    margin: auto; }
+  .about__text {
+    font-size: 24px; }
+
+@media only screen and (max-width: 1200px) {
+  .about__box {
+    width: 80%; } }
+
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 100px 0; }
+    .about__text {
+      font-size: 21px; } }
+
+/*# sourceMappingURL=about.css.map */

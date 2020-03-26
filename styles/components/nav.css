@@ -1,0 +1,34 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .nav__item {
+    cursor: pointer; }
+    .nav__item:after {
+      display: block;
+      content: "";
+      margin-top: 8px;
+      border-bottom: solid 3px #ff9c8e;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transition: -webkit-transform 250ms ease-in-out;
+      transition: -webkit-transform 250ms ease-in-out;
+      transition: transform 250ms ease-in-out;
+      transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out; }
+    .nav__item:hover:after {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1); }
+    .nav__item:not(:last-of-type) {
+      margin-right: 64px; }
+
+@media only screen and (max-width: 1000px) {
+  .nav__list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
+/*# sourceMappingURL=nav.css.map */

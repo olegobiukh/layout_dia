@@ -1,0 +1,23 @@
+.section__suptitle {
+  color: #c0cdd7;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase; }
+
+.section__title {
+  color: #253757;
+  font-weight: bold;
+  font-size: 32px; }
+
+.section__bottom {
+  background-color: #fff; }
+
+.section__container {
+  width: 1020px;
+  margin: auto; }
+
+@media only screen and (max-width: 1800px) {
+  .section__container {
+    width: 80%; } }
+
+/*# sourceMappingURL=section.css.map */

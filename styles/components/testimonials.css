@@ -1,0 +1,129 @@
+.testimonials__image--wrapper::before, .testimonials__image--wrapper::after {
+  position: absolute;
+  content: "";
+  width: 139px;
+  height: 56px;
+  border-radius: 500px;
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.testimonials {
+  margin: auto;
+  width: 90%;
+  padding-top: 148px;
+  padding-bottom: 168px; }
+  .testimonials__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 85px; }
+  .testimonials__box {
+    width: 314px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 24px;
+    padding: 32px;
+    padding-top: 64px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+            box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03); }
+    .testimonials__box:hover {
+      -webkit-box-shadow: 3px 6px 30px -9px #4d4c4d;
+              box-shadow: 3px 6px 30px -9px #4d4c4d; }
+  .testimonials__image {
+    position: relative;
+    border-radius: 50%;
+    z-index: 2; }
+    .testimonials__image--wrapper {
+      position: relative;
+      width: 140px;
+      height: 140px; }
+      .testimonials__image--wrapper::before {
+        left: -55px;
+        top: 0; }
+      .testimonials__image--wrapper::after {
+        right: -55px;
+        top: 83px; }
+  .testimonials__box:hover .testimonials__image--wrapper::before {
+    top: -15px; }
+  .testimonials__box:hover .testimonials__image--wrapper::after {
+    top: 98px; }
+  .testimonials__box:first-of-type .testimonials__image--wrapper::before {
+    background-color: #008aff; }
+  .testimonials__box:first-of-type .testimonials__image--wrapper::after {
+    background-color: #008aff; }
+  .testimonials__box:nth-of-type(2) .testimonials__image--wrapper::before {
+    background-color: #fcc91d; }
+  .testimonials__box:nth-of-type(2) .testimonials__image--wrapper::after {
+    background-color: #fcc91d; }
+  .testimonials__box:last-of-type .testimonials__image--wrapper::before {
+    background-color: #f36363; }
+  .testimonials__box:last-of-type .testimonials__image--wrapper::after {
+    background-color: #f36363; }
+  .testimonials__text {
+    margin-top: 10px;
+    color: #6c788b;
+    text-align: center; }
+  .testimonials__name {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 16px;
+    color: #253757; }
+  .testimonials__position {
+    margin-top: 4px;
+    color: #c0cdd7;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+  .testimonials__quote {
+    margin-top: 31px; }
+
+@media only screen and (max-width: 1100px) {
+  .testimonials__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .testimonials__box {
+    margin-bottom: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  .testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px 3%; }
+    .testimonials__container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 23px; }
+    .testimonials__box {
+      width: 100%;
+      margin-bottom: 20px; } }
+
+/*# sourceMappingURL=testimonials.css.map */
