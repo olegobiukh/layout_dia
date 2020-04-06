@@ -27,7 +27,12 @@
     min-width: 64px;
     height: 64px;
     background-color: #fff;
-    border-radius: 50%; }
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .approach__image:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
     .approach__image--speaker {
       background-image: url("../images/approach/speaker.png"); }
     .approach__image--calendar {

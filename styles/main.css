@@ -437,8 +437,9 @@ ol {
     color: #fff;
     margin-top: "96px";
     border: none;
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s; }
+    cursor: pointer;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
     .header__button:hover {
       background-color: #ff4328; }
 
@@ -645,7 +646,9 @@ h1 {
     background-size: cover;
     width: 184px;
     height: 166px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
     .expertise__image--1st {
       background-image: url("../images/what-we-do/what-we-do-1.jpg"); }
     .expertise__image--2nd {
@@ -653,7 +656,8 @@ h1 {
     .expertise__image--3rd {
       background-image: url("../images/what-we-do/what-we-do-3.jpg"); }
     .expertise__image:hover {
-      background-size: 170%; }
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .expertise__title {
     margin-top: 40px;
     font-size: 20px;
@@ -788,6 +792,13 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 32px; }
+  .card__link {
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #334563; }
+    .card__link:hover {
+      text-decoration: underline; }
   .card__image {
     display: inline-block;
     width: 40px;
@@ -801,6 +812,8 @@ h1 {
     .card__image:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
+      .card__image:hover ~ .card__link {
+        text-decoration: underline; }
     .card__image--blue {
       background-color: #56ccf2; }
     .card__image--orange {
@@ -809,11 +822,6 @@ h1 {
       background-color: #15d850; }
     .card__image--red {
       background-color: #f36363; }
-  .card__link {
-    margin-left: 16px;
-    font-weight: 600;
-    font-size: 15px;
-    color: #334563; }
 
 @media only screen and (max-width: 610px) {
   .card {
@@ -870,7 +878,12 @@ h1 {
     min-width: 64px;
     height: 64px;
     background-color: #fff;
-    border-radius: 50%; }
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .approach__image:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
     .approach__image--speaker {
       background-image: url("../images/approach/speaker.png"); }
     .approach__image--calendar {
@@ -1165,8 +1178,9 @@ h1 {
     color: #fff;
     margin-top: 64px;
     border: none;
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s; }
+    cursor: pointer;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
     .vision__button:hover {
       background-color: #ff4328; }
 
@@ -1242,8 +1256,9 @@ h1 {
     color: #fff;
     margin-top: "80px";
     border: none;
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s; }
+    cursor: pointer;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
     .footer__button:hover {
       background-color: #ff4328; }
   .footer__bottom {
@@ -1455,6 +1470,9 @@ h1 {
       -webkit-transition-duration: 0.25s;
               transition-duration: 0.25s;
       z-index: 2; } }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   font-size: 14px;

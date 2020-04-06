@@ -43,6 +43,13 @@
         -ms-flex-align: center;
             align-items: center;
     margin-top: 32px; }
+  .card__link {
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #334563; }
+    .card__link:hover {
+      text-decoration: underline; }
   .card__image {
     display: inline-block;
     width: 40px;
@@ -56,6 +63,8 @@
     .card__image:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
+      .card__image:hover ~ .card__link {
+        text-decoration: underline; }
     .card__image--blue {
       background-color: #56ccf2; }
     .card__image--orange {
@@ -64,11 +73,6 @@
       background-color: #15d850; }
     .card__image--red {
       background-color: #f36363; }
-  .card__link {
-    margin-left: 16px;
-    font-weight: 600;
-    font-size: 15px;
-    color: #334563; }
 
 @media only screen and (max-width: 610px) {
   .card {

@@ -113,8 +113,9 @@
     color: #fff;
     margin-top: 64px;
     border: none;
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s; }
+    cursor: pointer;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
     .vision__button:hover {
       background-color: #ff4328; }
 

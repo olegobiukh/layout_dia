@@ -63,8 +63,9 @@
     color: #fff;
     margin-top: "96px";
     border: none;
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s; }
+    cursor: pointer;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
     .header__button:hover {
       background-color: #ff4328; }
 

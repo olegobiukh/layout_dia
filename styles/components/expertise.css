@@ -29,7 +29,9 @@
     background-size: cover;
     width: 184px;
     height: 166px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
     .expertise__image--1st {
       background-image: url("../images/what-we-do/what-we-do-1.jpg"); }
     .expertise__image--2nd {
@@ -37,7 +39,8 @@
     .expertise__image--3rd {
       background-image: url("../images/what-we-do/what-we-do-3.jpg"); }
     .expertise__image:hover {
-      background-size: 170%; }
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .expertise__title {
     margin-top: 40px;
     font-size: 20px;
