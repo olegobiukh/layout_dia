@@ -9,7 +9,7 @@ let currentSlider = 1;
 prev.classList.add('slider__arrow--disable');
 
 const setSliderImage = () => {
-  slider.style.backgroundImage = `url(./layout_dia/images/slider/${currentSlider}.png)`;
+  slider.style.backgroundImage = `url(../layout_dia/images/slider/${currentSlider}.png)`;
 };
 
 prev.addEventListener('click', () => {
